@@ -1,0 +1,8 @@
+name = "aletik-og"
+main = "src/index.js"
+compatibility_date = "2024-01-01"
+
+# Uncomment and set your route after deploying:
+# routes = [
+#   { pattern = "aletik.me/*", zone_name = "aletik.me" }
+# ]
