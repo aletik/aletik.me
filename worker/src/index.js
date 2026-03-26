@@ -9,7 +9,7 @@
  */
 
 const CONFIG = {
-  owner: "aletikme",
+  owner: "aletik",
   repo: "aletik.me",
   branch: "main",
   siteUrl: "https://aletik.me",
@@ -157,10 +157,23 @@ function parseFrontmatter(content, contentPath) {
     }
   }
 
+  // Try frontmatter image first, then extract first image from markdown body
+  let image = data.heroImage || data.image || data.ogImage || "";
+  if (!image) {
+    const body = content.replace(/^---[\s\S]*?---/, "");
+    const imgMatch = body.match(/!\[[^\]]*\]\(([^)]+)\)/);
+    if (imgMatch) {
+      const src = imgMatch[1];
+      image = src.startsWith("http")
+        ? src
+        : `${contentPath}/${src}`;
+    }
+  }
+
   return {
     title: data.title || "",
     description: data.description || data.excerpt || "",
-    image: data.heroImage || data.image || data.ogImage || "",
+    image,
     date: data.date || "",
   };
 }
