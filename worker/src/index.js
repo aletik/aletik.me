@@ -164,9 +164,7 @@ function parseFrontmatter(content, contentPath) {
     const imgMatch = body.match(/!\[[^\]]*\]\(([^)]+)\)/);
     if (imgMatch) {
       const src = imgMatch[1];
-      image = src.startsWith("http")
-        ? src
-        : `${contentPath}/${src}`;
+      image = src;
     }
   }
 
