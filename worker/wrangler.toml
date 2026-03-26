@@ -3,5 +3,6 @@ main = "src/index.js"
 compatibility_date = "2024-01-01"
 
 routes = [
-  { pattern = "aletik.me/*", zone_name = "aletik.me" }
+  { pattern = "aletik.me/*", zone_name = "aletik.me" },
+  { pattern = "www.aletik.me/*", zone_name = "aletik.me" }
 ]
