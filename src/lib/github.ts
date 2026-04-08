@@ -129,7 +129,10 @@ export async function fetchPostList(
   if (cached) return cached;
 
   const apiUrl = `https://api.github.com/repos/${cfg.owner}/${cfg.repo}/contents/${cfg.contentPath}?ref=${cfg.branch}`;
-  const res = await fetch(apiUrl);
+  const headers: Record<string, string> = {};
+  const token = import.meta.env.PUBLIC_GITHUB_TOKEN;
+  if (token) headers.Authorization = `token ${token}`;
+  const res = await fetch(apiUrl, { headers });
   if (!res.ok) throw new Error(`GitHub API error: ${res.status}`);
 
   const files: { name: string; path: string; type: string }[] =
