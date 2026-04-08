@@ -15,6 +15,5 @@ There are a quite a few quirks to iron out. Panels are still not dockable. There
 
 Under the hood, Notepad++ for macOS is written in Objective-C++ using platform-native APIs and the [Scintilla](https://www.scintilla.org/) editing component, the same engine that powers the Windows version. This ensures high performance and a small footprint without relying on emulation layers or Electron wrappers. The project is open source under the [GNU General Public License](https://www.gnu.org/licenses/gpl-3.0.html), and plugin migration from the Windows ecosystem is ongoing. The editor also ships with support for 137 interface languages out of the box. You can download it and learn more at [notepad-plus-plus-mac.org](https://notepad-plus-plus-mac.org).
 
- 
 
-![Notepad++ running on macOS](https://notepad-plus-plus-mac.org/assets/images/screenshot1.png)
+![Notepad++ running on macOS](npp_screen01.png)
