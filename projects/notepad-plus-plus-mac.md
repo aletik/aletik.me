@@ -19,3 +19,10 @@ Under the hood, Notepad++ for macOS is written in Objective-C++ using platform-n
 
 
 ![Notepad++ running on macOS](npp_screen01.png)
+
+<div style="text-align: center; margin-top: 2rem;">
+<a href="https://notepad-plus-plus-mac.org" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 0.5rem; background-color: #34C759; color: white; font-weight: 600; font-size: 1.1rem; padding: 0.85rem 2.2rem; border-radius: 999px; text-decoration: none; transition: background-color 0.2s;">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
+Download for macOS
+</a>
+</div>
