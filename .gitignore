@@ -5,3 +5,4 @@ dist/
 tmp/
 worker/
 .env
+.claude/
