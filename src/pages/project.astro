@@ -124,6 +124,20 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       const stash = extractDownloadButtons(rewritten);
       bodyEl.innerHTML = await marked.parse(stash.markdown);
 
+      // Style image captions: find <p> tags containing <img> followed by <em>
+      bodyEl.querySelectorAll("p").forEach((p) => {
+        const img = p.querySelector("img");
+        const em = p.querySelector("em");
+        if (img && em && p.childNodes.length <= 3) {
+          const caption = document.createElement("p");
+          caption.className = "image-caption";
+          caption.textContent = em.textContent;
+          p.innerHTML = "";
+          p.appendChild(img);
+          p.after(caption);
+        }
+      });
+
       bodyEl.querySelectorAll("a").forEach((a) => {
         const href = a.getAttribute("href");
         if (href && href.startsWith("http")) {

@@ -8,15 +8,6 @@ tags: [notepad++, ai, beads, beads viever]
 ![Chameleon walking on Beads](beads-v1/beads-walking-chameleon2.png)
 *Chameleon walking on Beads*
 
-<div style="text-align: center; margin-top: 2rem;">
-<a href="https://github.com/notepad-plus-plus-mac/NppBeads/releases/download/v0.9/Beadsv0.9.0.dmg" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 0.5rem; background-color: #34C759; color: white; font-weight: 600; font-size: 1.1rem; padding: 0.85rem 2.2rem; border-radius: 999px; text-decoration: none; transition: background-color 0.2s;">
-<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
-Download for macOS
-</a>
-</div>
-<download-button href="https://github.com/notepad-plus-plus-mac/NppBeads" variant="secondary" icon="github">View NppBeads Source on GitHub</download-button>
-
-
 # Beads - a new Jira for Agentic AI
 
 The Notepad++ Beads plugin and the native macOS Beads viewer were inspired by two amazing people, [Steve Yegge](https://www.linkedin.com/in/steveyegge/) and [Jeffrey Emanuel](https://www.linkedin.com/in/jeffreyemanuel/), who did most of the heavy lifting. Steve built Beads. Jeff designed and built the original Beads Viewer, which I adapted to work as a plugin in Notepad++ and later decided to make into a standalone Mac app so people are free to use it without any editor. 
@@ -571,3 +562,12 @@ Beads changes one assumption every other issue tracker takes for granted: that t
 NppBeads Viewer and Beads macOS Viewer app makes that system pleasant to watch and easy to use. But the reason it works isn't the visuals. It's that the underlying model treats issue tracking as something both humans and agents can write to, and built every feature around that assumption. Beads is your next multi-agent Jira but in the age of AI and speed. That's the shift. Everything else follows.
 
 Special Thanks to [Steve Yegge](https://www.linkedin.com/in/steveyegge/) and [Jeffrey Emanuel](https://www.linkedin.com/in/jeffreyemanuel/). More to come.
+
+
+
+<div style="text-align: center; margin-top: 2rem;">
+<a href="https://notepad-plus-plus-mac.org/news/" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 0.5rem; background-color: #34C759; color: white; font-weight: 600; font-size: 1.1rem; padding: 0.85rem 2.2rem; border-radius: 999px; text-decoration: none; transition: background-color 0.2s;">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
+Download for macOS
+</a>
+</div>
