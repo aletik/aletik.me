@@ -58,6 +58,10 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     formatDate,
   } from "../lib/github";
   import { GITHUB_PROJECTS } from "../config";
+  import {
+    extractDownloadButtons,
+    renderDownloadButtons,
+  } from "../lib/download-buttons";
 
   const skeleton = document.getElementById("project-skeleton")!;
   const article = document.getElementById("project-article")!;
@@ -117,7 +121,8 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       }
 
       const rewritten = rewriteImagePaths(project.content, GITHUB_PROJECTS);
-      bodyEl.innerHTML = await marked.parse(rewritten);
+      const stash = extractDownloadButtons(rewritten);
+      bodyEl.innerHTML = await marked.parse(stash.markdown);
 
       bodyEl.querySelectorAll("a").forEach((a) => {
         const href = a.getAttribute("href");
@@ -126,6 +131,9 @@ import BaseLayout from "../layouts/BaseLayout.astro";
           a.setAttribute("rel", "noopener noreferrer");
         }
       });
+
+      // Convert <download-button> placeholders into styled .btn anchors
+      renderDownloadButtons(bodyEl, stash);
 
       skeleton.classList.add("hidden");
       article.classList.remove("hidden");

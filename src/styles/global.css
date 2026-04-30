@@ -218,6 +218,175 @@ html {
   background: #1e293b;
 }
 
+/* --- <download-button> markdown tag → styled .btn anchor --- */
+
+/* Hide raw custom elements until the post-processor swaps them (avoids FOUC) */
+.prose download-button {
+  display: none;
+}
+
+.prose .download-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 1.25em 0;
+}
+
+/* Mirror parent text-align onto the flex wrapper so authors can use
+   <div style="text-align: center;"> to center buttons. */
+.prose [style*="text-align: center"] > .download-buttons,
+.prose [style*="text-align:center"] > .download-buttons,
+.prose .center > .download-buttons,
+.prose div.center .download-buttons {
+  justify-content: center;
+}
+.prose [style*="text-align: right"] > .download-buttons,
+.prose [style*="text-align:right"] > .download-buttons,
+.prose .right > .download-buttons {
+  justify-content: flex-end;
+}
+.prose .center {
+  text-align: center;
+}
+.prose .right {
+  text-align: right;
+}
+
+/* Override .prose a underline so .btn anchors render cleanly */
+.prose a.btn {
+  text-decoration: none;
+}
+.prose a.btn:hover {
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 22px;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease,
+    box-shadow 0.15s ease,
+    transform 0.15s ease;
+  white-space: nowrap;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+.btn svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.prose a.btn-primary,
+.prose a.btn-primary:hover {
+  color: #fff;
+}
+.btn-primary {
+  background: var(--color-accent);
+  color: #fff;
+  box-shadow: 0 2px 12px rgba(37, 99, 235, 0.25);
+}
+.btn-primary:hover {
+  background: var(--color-accent-hover);
+  box-shadow: 0 4px 20px rgba(37, 99, 235, 0.35);
+}
+.dark .btn-primary {
+  background: var(--color-accent-dark);
+  color: #0f172a;
+  box-shadow: 0 2px 12px rgba(96, 165, 250, 0.25);
+}
+.dark .btn-primary:hover {
+  background: var(--color-accent-dark-hover);
+  color: #0f172a;
+  box-shadow: 0 4px 20px rgba(96, 165, 250, 0.35);
+}
+.dark .prose a.btn-primary,
+.dark .prose a.btn-primary:hover {
+  color: #0f172a;
+}
+
+.prose a.btn-secondary {
+  color: #334155;
+}
+.prose a.btn-secondary:hover {
+  color: var(--color-accent);
+}
+.btn-secondary {
+  background: #f1f5f9;
+  color: #334155;
+  border: 1px solid #e2e8f0;
+}
+.btn-secondary:hover {
+  background: #e2e8f0;
+  border-color: #cbd5e1;
+  color: var(--color-accent);
+  transform: translateY(-1px);
+}
+.dark .btn-secondary {
+  background: #1e293b;
+  color: #cbd5e1;
+  border-color: #334155;
+}
+.dark .btn-secondary:hover {
+  background: #334155;
+  border-color: #475569;
+  color: var(--color-accent-dark);
+}
+.dark .prose a.btn-secondary {
+  color: #cbd5e1;
+}
+.dark .prose a.btn-secondary:hover {
+  color: var(--color-accent-dark);
+}
+
+.prose a.btn-outline {
+  color: #1e293b;
+}
+.prose a.btn-outline:hover {
+  color: var(--color-accent);
+}
+.btn-outline {
+  background: transparent;
+  color: #1e293b;
+  border: 1px solid #cbd5e1;
+}
+.btn-outline:hover {
+  background: #f8fafc;
+  border-color: #94a3b8;
+  transform: translateY(-1px);
+}
+.dark .btn-outline {
+  background: transparent;
+  color: #e2e8f0;
+  border-color: #475569;
+}
+.dark .btn-outline:hover {
+  background: #1e293b;
+  border-color: #64748b;
+}
+.dark .prose a.btn-outline {
+  color: #e2e8f0;
+}
+.dark .prose a.btn-outline:hover {
+  color: var(--color-accent-dark);
+}
+
+@media (max-width: 640px) {
+  .prose .download-buttons .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
 /* Loading skeleton animation */
 @keyframes shimmer {
   0% {
