@@ -1,26 +1,18 @@
 ---
-title: "Beads Viewer for Notepad++ and macOS"
+title: "Beads Viewer for Nextpad++ and macOS"
 date: 2026-04-28
 description: Issue Tracking That Works for AI Agents
-tags: [notepad++, ai, beads, beads viever]
+tags: [nextpad++, ai, beads, beads viever]
 ---
 
-![Chameleon walking on Beads](beads-v1/beads-walking-chameleon2.png)
+![Chameleon walking on Beads](beads-v1/beads-walking-frog.png)
 *Chameleon walking on Beads*
-
-<div style="text-align: center; margin-top: 2rem;">
-<a href="https://notepad-plus-plus-mac.org/news/" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 0.5rem; background-color: #34C759; color: white; font-weight: 600; font-size: 1.1rem; padding: 0.85rem 2.2rem; border-radius: 999px; text-decoration: none; transition: background-color 0.2s;">
-<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
-Download for macOS
-</a>
-</div>
-
 
 # Beads - a new Jira for Agentic AI
 
-The Notepad++ Beads plugin and the native macOS Beads viewer were inspired by two amazing people, [Steve Yegge](https://www.linkedin.com/in/steveyegge/) and [Jeffrey Emanuel](https://www.linkedin.com/in/jeffreyemanuel/), who did most of the heavy lifting. Steve built Beads. Jeff designed and built the original Beads Viewer, which I adapted to work as a plugin in Notepad++ and later decided to make into a standalone Mac app so people are free to use it without any editor. 
+The Nextpad++ Beads plugin and the native macOS Beads viewer were inspired by two amazing people, [Steve Yegge](https://www.linkedin.com/in/steveyegge/) and [Jeffrey Emanuel](https://www.linkedin.com/in/jeffreyemanuel/), who did most of the heavy lifting. Steve built Beads. Jeff designed and built the original Beads Viewer, which I adapted to work as a plugin in Nextpad++ and later decided to make into a standalone Mac app so people are free to use it without any editor. 
 
-However, the Notepad++ Beads Viewer is not only a viewer. It's more advanced and incorporates the work of Justin Dillon, who built the Beads extension for Visual Studio. The Beads Viewer I’m releasing today is likely more advanced than most Beads plugins available today. It includes editing and real-time sync functionality and works with both Beads JSONL files in read-only mode and Dolt DB in read-write mode.
+However, the Nextpad++ Beads Viewer is not only a viewer. It's more advanced and incorporates the work of Justin Dillon, who built the Beads extension for Visual Studio. The Beads Viewer I’m releasing today is likely more advanced than most Beads plugins available today. It includes editing and real-time sync functionality and works with both Beads JSONL files in read-only mode and Dolt DB in read-write mode.
 
 Please note that some screenshots contain examples of Beads from Jeff's public github product repos. 
 
@@ -34,8 +26,8 @@ The reason is that an agent has a context window, basically a fixed amount of me
 Beads is institutional memory for agents. NppBeads is what makes it pleasant to use without leaving your editor.
 
 
-![Notepad++ Beads Viewer Plugin Graph View](beads-v1/screen01.png)
-*Notepad++ Beads Viewer Plugin Graph View*
+![Nextpad++ Beads Viewer Plugin Graph View](beads-v1/screen01.png)
+*Nextpad++ Beads Viewer Plugin Graph View*
 
 
 
@@ -96,8 +88,8 @@ When the agent's internal memory gets compressed an hour later, that information
 
 Beads is more than a flat list. Each issue can be connected to others using ten different relationship types: `blocks`, `parent-child`, `conditional-blocks`, `waits-for`, `related`, `tracks`, `discovered-from`, `caused-by`, `validates`, and `supersedes`. That vocabulary is enough to describe how real engineering shapes itself: a child issue under an epic, a blocker that only applies in one condition, a follow-up that was found while fixing something else, a validation issue that confirms an earlier fix held.
 
-![Notepad++ Beads Viewer Plugin Graph View](beads-v1/dependency-graph.png)
-*Sample Notepad++ Beads Graph View*
+![Nextpad++ Beads Viewer Plugin Graph View](beads-v1/dependency-graph.png)
+*Sample Nextpad++ Beads Graph View*
 
 
 These relationships form a graph. These graphs can be huge. The graph powers a single useful question.. what can be worked on right now?
@@ -123,8 +115,8 @@ A few details make this real:
 
 **Review and rollback.** Because the whole store is in Dolt and Dolt is in the repo, the orchestration log is a git log. `git log .beads/` is a chronological record of every claim, every status change, every comment. `git blame` on a closed issue tells you which agent closed it and when. If an afternoon of agent work produced bad results, `git revert` on the relevant range of commits rolls the tracker state back atomically, and the code it was working on rolls back in the same operation. You watch the Kanban board in NppBeads fill with in-progress cards and drain into closed without telling any of the agents what to do.
 
-![Notepad++ Beads Viewer Plugin Board View](beads-v1/screen02.png)
-*Notepad++ Beads Viewer Plugin Board View*
+![Nextpad++ Beads Viewer Plugin Board View](beads-v1/screen02.png)
+*Nextpad++ Beads Viewer Plugin Board View*
 
 A point worth making up front, because it changes how you think about the whole tool: in a Beads-driven workflow, **most of the writing and most of the reading is done by agents, not humans.** Humans file the load-bearing issues. Epics. High-priority bugs the agent can't be trusted to scope on its own. Decisions that need a person to weigh in. Agents do everything else. 
 
@@ -225,27 +217,27 @@ Same pattern teams have used for years to bridge Jira and GitHub Issues. The dif
 Beads is like a red pill in the age of AI. You want to move at a slower pace, take a blue pill and stay on Jira. You want things to move at blazing speed, look at Beads. Any reporting you can think of can be added into the Beads Viewer/Editor to make it look like Jira and have executive level views that will refresh in real-time.
 
 
-## Where Notepad++ Beads comes in
+## Where Nextpad++ Beads comes in
 
-Beads itself is command line only. NppBeads adds a visual layer inside Notepad++. The "UI" is a docked side panel (a webview running locally inside the editor) that shows six different surfaces, all driven by `bd` calls under the hood.
+Beads itself is command line only. NppBeads adds a visual layer inside Nextpad++. The "UI" is a docked side panel (a webview running locally inside the editor) that shows six different surfaces, all driven by `bd` calls under the hood.
 
 A critical detail: NppBeads or macOS Beads app do not replace Beads. They are thin wrappers. Every read goes through `bd list --json` or `bd show --json`. Every write goes through `bd create`, `bd update`, `bd close`, `bd comment add`, or friends. There's no NppBeads database, no separate sync process, no caching beyond what `bd` itself does. If you do something via NppBeads, the next person who runs `bd list` from a terminal sees it. If a teammate's agent runs `bd update` from a script, your panel refreshes within two seconds.
 
 That hard rule (everything is `bd`) means NppBeads doesn't lock you in. Use it in the morning, switch to a terminal in the afternoon, let an agent run overnight, come back the next morning. There's no merge conflict because there's nothing to merge. The single source of truth is whatever `bd` says. NppBeads is one of several front ends. 
 
-The plugin and macOS app exist for the same reason: to remove a context switch. Dropping out of Notepad++ or MacViewer into a terminal to run `bd update` is small individually but multiplicative across a day. After a couple of weeks of running Beads from the terminal alone, the friction wins and people stop updating statuses. A stand-alone macOS viewer can be amazing for management to monitor a project.   
+The plugin and macOS app exist for the same reason: to remove a context switch. Dropping out of Nextpad++ or MacViewer into a terminal to run `bd update` is small individually but multiplicative across a day. After a couple of weeks of running Beads from the terminal alone, the friction wins and people stop updating statuses. A stand-alone macOS viewer can be amazing for management to monitor a project.   
 
 
 ## Installing Beads Plugin
 
-Best way to install NppBeads plugin from the Notepad++ Plugins Admins
+Best way to install NppBeads plugin from the Nextpad++ Plugins Admins
 
-![Notepad++ Beads Plugin Admin](beads-v1/plugin-admin.png)
-*Notepad++ Beads in Plugin Admin*
+![Nextpad++ Beads Plugin Admin](beads-v1/plugin-admin.png)
+*Nextpad++ Beads in Plugin Admin*
 
-Restart Notepad++. The plugin shows up as a main toolbar icon 
+Restart Nextpad++. The plugin shows up as a main toolbar icon 
 
-![Notepad++ Beads Plugin launched first time](beads-v1/toolbar-icon.gif) and under `Plugins → NppBeads` with three menu items at first (Show Beads panel, Reload issues, Reveal .beads/ in Finder) and a few more once you've used it (Jump to bead under caret, Copy bead id, Create issue from selection). The default keyboard shortcut for opening the panel is Cmd-Option-Shift-B. If that conflicts with anything in your setup, rebind via the standard NPP shortcut manager.
+![Nextpad++ Beads Plugin launched first time](beads-v1/toolbar-icon.gif) and under `Plugins → NppBeads` with three menu items at first (Show Beads panel, Reload issues, Reveal .beads/ in Finder) and a few more once you've used it (Jump to bead under caret, Copy bead id, Create issue from selection). The default keyboard shortcut for opening the panel is Cmd-Option-Shift-B. If that conflicts with anything in your setup, rebind via the standard NPP shortcut manager.
 
 
 If you'd rather have a stand-alone macOS Beads Viewer application, you can download the 2MB DMG install (top of this page), launch it and simply drag the Beads Viewer App into your Mac Applications folder.
@@ -263,17 +255,17 @@ bd version   # confirms install
 
 Without `bd` the plugin runs in read-only mode. It reads `.beads/issues.jsonl` (the export file Beads maintains for compatibility) and shows you the data, but every edit attempt fails with a "ReadOnly" error. The status bar at the bottom of the panel tells you which mode you're in: `bd v1.0.2` or similar means full mode, `read-only (JSONL)` means fallback.
 
-If you launch Notepad++ from Finder rather than from a terminal, NPP inherits a sparse `PATH` that often doesn't include `/opt/homebrew/bin`. NppBeads handles this by checking common install locations directly (`/opt/homebrew/bin`, `/usr/local/bin`, `~/bin`, `~/.local/bin`, `~/go/bin`) before falling back to the inherited `PATH`. So `brew install beads` followed by an NPP relaunch should just work.
+If you launch Nextpad++ from Finder rather than from a terminal, NPP inherits a sparse `PATH` that often doesn't include `/opt/homebrew/bin`. NppBeads handles this by checking common install locations directly (`/opt/homebrew/bin`, `/usr/local/bin`, `~/bin`, `~/.local/bin`, `~/go/bin`) before falling back to the inherited `PATH`. So `brew install beads` followed by an NPP relaunch should just work.
 
 
-NppBeads Notepad++ plugin and macOS App have exactly the same functionality, codebase and live in the same repo. I make updates to NppBeads plugin, the macOS app gets all updates automatically. They look exactly the same. 
+NppBeads Nextpad++ plugin and macOS App have exactly the same functionality, codebase and live in the same repo. I make updates to NppBeads plugin, the macOS app gets all updates automatically. They look exactly the same. 
 
 ## The first time you open it
 
 Open the panel with Cmd-Option-Shift-B (or Plugins → NppBeads → Show Beads panel). You land on the Dashboard view by default.
 
 
-![Notepad++ Beads Plugin launched first time](beads-v1/open-first-time.png) *Notepad++ Beads Plugin launched first time*
+![Nextpad++ Beads Plugin launched first time](beads-v1/open-first-time.png) *Nextpad++ Beads Plugin launched first time*
 
 If a file is open that lives anywhere inside a Beads project (the panel walks up from the file's directory looking for a `.beads/` sibling, stopping at your home folder), the plugin auto-binds to that project. The status bar shows the project name, issue counts (open, blocked, closed, total), and the backend mode.
 
@@ -347,7 +339,7 @@ The two metrics most useful in practice:
 
 **Betweenness centrality** colors bridge nodes red. A high-betweenness issue connects otherwise-independent regions of the graph. Resolving it unlocks parallel work in streams that would otherwise stay parallel-but-stuck. Different from PageRank: PageRank values depth, betweenness values bridging. They surface different short lists.
 
-![Graph view](beads-v1/graph-view01.png) *Graph view in Notepad++ Beads plugin pointed to github.com/Dicklesworthstone beads_rust repo*
+![Graph view](beads-v1/graph-view01.png) *Graph view in Nextpad++ Beads plugin pointed to github.com/Dicklesworthstone beads_rust repo*
 
 The graph is also where the panel's theme awareness shows up. Switch to light mode (theme button in the toolbar) and the canvas redraws with a white background and a darkened version of every status, priority, and accent color, so contrast remains readable. Same graph, dark or light, within a couple of frames.
 
@@ -355,7 +347,7 @@ The graph is also where the panel's theme awareness shows up. Switch to light mo
 
 The kanban surface. Four columns by default: Open, In Progress, Blocked, Closed. Each card is an issue. Drag a card to a new column, that column's status is committed via `bd update --status`. Optimistic UI: the card moves immediately, then either confirms (toast) or rolls back (toast plus original position) depending on what `bd` reports. 
 
-![The Board view](beads-v1/board-view01.png) *The Board view in Notepad++ Beads plugin pointed to github.com/Dicklesworthstone beads_rust repo*
+![The Board view](beads-v1/board-view01.png) *The Board view in Nextpad++ Beads plugin pointed to github.com/Dicklesworthstone beads_rust repo*
 
 There's a **Raw / Effective** toggle in the top-left header of the Board. It changes which column each card lives in without touching the underlying data, and it's worth understanding why the distinction exists.
 
@@ -377,7 +369,7 @@ The view is read-only on click on purpose. Nothing in a row navigates you to the
 Activity also drives the "● N new" indicator in the status bar. Every time you visit Activity, the panel records the current timestamp. Later updates that happen after that timestamp (your own edits, agents, teammates) get counted in the badge. Visiting Activity again resets the counter. Quitting and reopening NPP preserves the count correctly across sessions.
 
 ![The Activity view](beads-v1/activity-view01.png)
-*The Activity view in Notepad++ Beads plugin pointed to github.com/Dicklesworthstone beads_rust repo*
+*The Activity view in Nextpad++ Beads plugin pointed to github.com/Dicklesworthstone beads_rust repo*
 
 ## Creating and editing beads
 
@@ -466,7 +458,7 @@ The second is a two-second poll of `bd list --all --json`. This catches changes 
 
 Both mechanisms are coordinated. They both call the same internal "refresh" path, which is idempotent and reconciles optimistic UI state with confirmed state.
 
-The poll pauses when Notepad++ isn't focused. Switch to a browser, the panel stops polling. Come back, the poll resumes and picks up any changes within one cycle. This matters mostly for the case where an agent is running in a terminal you're not watching: you don't want NPP burning `bd` processes while you're working in another app.
+The poll pauses when Nextpad++ isn't focused. Switch to a browser, the panel stops polling. Come back, the poll resumes and picks up any changes within one cycle. This matters mostly for the case where an agent is running in a terminal you're not watching: you don't want NPP burning `bd` processes while you're working in another app.
 
 There's also a "drag-guard" on the Board view. If a refresh fires while you're mid-drag of a card, the render is deferred until your drag ends. Without this, the dragged card's DOM node would get replaced by the refresh and the drag would die in your hand. An eight second watchdog releases the guard if the drag-end event somehow doesn't fire (drop outside the window, modifier-key issues).
 
@@ -492,7 +484,7 @@ A few things NppBeads doesn't do, on purpose or out of necessity:
 
 - **No cross-repo aggregated view.** Each `.beads/` is independent. If   you work across two repos with two trackers, you switch projects in   the dropdown to switch trackers. There's no "all my open work   across all projects" view. Beads supports cross-repo dependencies   via `external:other-project:bd-X` references, but NppBeads doesn't   render them as live links; they appear as plain text in the   dependency list.
 
-- **No hover preview on bead-ids.** This is a feature I may implement in the Notepad++ editor.
+- **No hover preview on bead-ids.** This is a feature I may implement in the Nextpad++ editor.
 
 
 - **Per-issue comments don't auto-refresh while the modal is open.**   The Board and Activity views auto-refresh on `bd` activity. The   detail modal's comments thread does not. If a teammate posts a   comment while your modal is open, you won't see it until you close   and reopen the modal. Deliberate scope decision (the alternative is   more bridge plumbing for a case that doesn't come up often) but a   real limitation.
