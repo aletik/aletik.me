@@ -1,7 +1,7 @@
 ---
 title: "Beads Viewer for Nextpad++ and macOS"
 date: 2026-04-28
-description: Issue Tracking That Works for AI Agents
+description: Task and Issue Tracking That Works for Multi-Agent AI Systems
 tags: [nextpad++, ai, beads, beads viever]
 ---
 
