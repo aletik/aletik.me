@@ -2,7 +2,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<BaseLayout title="Project" description="Project by Andrey Letov.">
+<BaseLayout title="Project" description="Project by Andrew Letov.">
   <!-- Back link -->
   <a
     href="/projects"
@@ -97,7 +97,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         return;
       }
 
-      document.title = `${project.title} | Andrey Letov`;
+      document.title = `${project.title} | Andrew Letov`;
 
       const metaDesc = document.querySelector('meta[name="description"]');
       if (metaDesc && project.description) {

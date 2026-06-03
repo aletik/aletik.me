@@ -1,8 +1,8 @@
 export const SITE = {
-  title: "Andrey Letov",
+  title: "Andrew Letov",
   description:
     "Product Manager who Builds at the intersection of Fintech and AI.",
-  author: "Andrey Letov",
+  author: "Andrew Letov",
   url: "https://aletik.me",
 };
 
@@ -22,7 +22,7 @@ export const GITHUB_PROJECTS = {
 
 export const SOCIAL = {
   github: "https://github.com/aletik",
-  linkedin: "https://www.linkedin.com/in/andreyletov/",
+  linkedin: "https://www.linkedin.com/in/andrewletov/",
   email: "mailto:aletik@gmail.com",
 };
 
