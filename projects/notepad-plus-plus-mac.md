@@ -12,7 +12,7 @@ tags: [macOS, open-source, code-editor]
 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
 Download for macOS
 </a>
-</div>
+</div><p>
 
 Notepad++ has been one of the most popular source code editors on Windows for almost two decades, with millions downloads, it's loved by developers for its speed, simplicity, and extensive language support. I always wanted to have the same simple yet powerful editor on my Mac. For 4 months now, I have been using multiagent AI workflows and in March 2026 I decided to take on the task of porting Notepad++ to macOS as a native independent application. The macOS version called Nextpad for Mac retains most that made the original great, which is syntax highlighting for 80+ programming languages, powerful regex-based search and replace, split view editing, macro recording, and a plugin ecosystem. I think that gradually it will be feeling right at home on the Mac. It runs on macOS 11 and later, launches instantly on Intel and M-series chips.
 
