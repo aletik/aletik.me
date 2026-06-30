@@ -2,7 +2,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<BaseLayout title="Post" description="Blog post by Andrew Letov.">
+<BaseLayout title="Post" description="Blog post by Andrew Letov." wide>
   <!-- Back link -->
   <a
     href="/posts"
@@ -34,7 +34,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       <div id="post-meta" class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-slate-500 dark:text-slate-400"></div>
       <div id="post-tags" class="flex flex-wrap gap-2 mt-3"></div>
     </header>
-    <div id="post-body" class="prose dark:text-slate-300"></div>
+    <div id="post-body" class="prose prose-wide dark:text-slate-300"></div>
   </article>
 
   <!-- Error state -->

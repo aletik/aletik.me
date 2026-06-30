@@ -7,9 +7,10 @@ import "../styles/global.css";
 interface Props {
   title?: string;
   description?: string;
+  wide?: boolean;
 }
 
-const { title, description } = Astro.props;
+const { title, description, wide } = Astro.props;
 const pageTitle = title ? `${title} | ${SITE.title}` : SITE.title;
 const pageDescription = description || SITE.description;
 ---
@@ -57,11 +58,11 @@ const pageDescription = description || SITE.description;
     >
       Skip to content
     </a>
-    <Header />
-    <main id="main-content" class="flex-1 w-full max-w-3xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
+    <Header wide={wide} />
+    <main id="main-content" class={`flex-1 w-full ${wide ? "max-w-[1068px]" : "max-w-3xl"} mx-auto px-4 sm:px-6 py-8 sm:py-12`}>
       <slot />
     </main>
-    <Footer />
+    <Footer wide={wide} />
 
     <!-- Theme initialization (runs before paint to avoid flash) -->
     <script is:inline>

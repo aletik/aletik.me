@@ -55,6 +55,11 @@ html {
   max-width: 65ch;
 }
 
+/* Post/project detail pages: let the body fill the wider (1068px) column */
+.prose-wide {
+  max-width: none;
+}
+
 .prose h1,
 .prose h2,
 .prose h3,

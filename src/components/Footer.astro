@@ -1,9 +1,11 @@
 ---
 import { SOCIAL } from "../config";
+
+const { wide } = Astro.props;
 ---
 
 <footer class="border-t border-slate-200 dark:border-slate-700/50 mt-auto">
-  <div class="max-w-3xl mx-auto px-4 sm:px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+  <div class={`${wide ? "max-w-[1068px]" : "max-w-3xl"} mx-auto px-4 sm:px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4`}>
     <p class="text-sm text-slate-500 dark:text-slate-400">
       &copy; {new Date().getFullYear()} Andrew Letov
     </p>
