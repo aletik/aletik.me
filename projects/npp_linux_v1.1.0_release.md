@@ -5,7 +5,7 @@ description: Nextpad++ arrives on Linux as the full native GTK4 port of Notepad+
 tags: [nextpad++, linux, gtk4, first release, version 1.1.0, plugins, notepad++, ubuntu, fedora, debian]
 ---
 
-![linux-hero](https://github.com/nextpad-plus-plus/nextpad.org/blob/main/news/npp_linux_v1.1.0_release/linux-logo.png) *Nextpad++ v1.1.0 for Linux*
+![linux-hero](https://raw.githubusercontent.com/nextpad-plus-plus/nextpad.org/main/news/npp_linux_v1.1.0_release/linux-logo.png) *Nextpad++ v1.1.0 for Linux*
 
 <div style="text-align: center">
  <download-button href="https://nextpad.org/download/linux.html" variant="primary" icon="download">Download Nextpad++ for Linux</download-button>
@@ -25,7 +25,7 @@ You asked for it in macOS release thread, and the answer was always "soon". Toda
 - **Git, spell check, Markdown preview and change history built in** — things even Windows Notepad++ doesn't have.
 - **.deb and .rpm for x86_64 and arm64**, plus a Snap in the Ubuntu App Center. Yes, arm64 — Nextpad++ flies on a Raspberry Pi 5 and on ARM laptops.
 
-![main-window](https://github.com/nextpad-plus-plus/nextpad.org/blob/main/news/npp_linux_v1.1.0_release/main-window-light.png) *Nextpad++ v1.1.0 on Ubuntu 24.04 — light theme*
+![main-window](https://raw.githubusercontent.com/nextpad-plus-plus/nextpad.org/main/news/npp_linux_v1.1.0_release/main-window-light.png) *Nextpad++ v1.1.0 on Ubuntu 24.04 — light theme*
 
 ---
 
@@ -37,13 +37,13 @@ Everything you know from Notepad++ and the macOS Nextpad++ releases, natively on
 
 The Scintilla GTK4 engine with the complete Notepad++ feature set: multi-caret and column editing, macros you can record/save/replay (and run over whole folders), code folding, bookmarks, Hide Lines, bracket matching, auto-completion with parameter hints for 33 languages, clickable links, word/character statistics, large-file mode, EOL/encoding conversion across 45 character sets, session snapshots and periodic backups, and print support. Line operations, blank-line surgery, case conversion, Base64/URL/hash (MD5/SHA-1/SHA-256/SHA-512) tools — all present.
 
-![editing](https://github.com/nextpad-plus-plus/nextpad.org/blob/main/news/npp_linux_v1.1.0_release/multi-panel.png) *Multi-panel View*
+![editing](https://raw.githubusercontent.com/nextpad-plus-plus/nextpad.org/main/news/npp_linux_v1.1.0_release/multi-panel.png) *Multi-panel View*
 
 ## The search suite
 
 The full five-tab Find window: **Find / Replace / Find in Files / Find in Projects / Mark**, with regular expressions, the typo-tolerant **Fuzzy search** mode from macOS 1.0.9, incremental search bar (Ctrl+I), volatile find, match highlighting, and the collapsible Search Results panel with per-search grouping. Replace in Files reports real replacement counts and tells you when a file couldn't be written.
 
-![search](https://github.com/nextpad-plus-plus/nextpad.org/blob/main/news/npp_linux_v1.1.0_release/find-window.png) *The five-tab search window*
+![search](https://raw.githubusercontent.com/nextpad-plus-plus/nextpad.org/main/news/npp_linux_v1.1.0_release/find-window.png) *The five-tab search window*
 
 ## The workspace
 
@@ -54,11 +54,11 @@ Side panels that dock **left or right**, float as their own windows, remember th
 
 Light and dark mode (independent of the system, or following it), the **22 Notepad++ themes** you already know — Obsidian, Solarized, DansLeRuSH, Zenburn and friends — a Style Configurator for per-language styling, User Defined Languages with a live admin, and the optional **Tahoe-inspired look** for people who enjoyed the macOS 1.0.8 redesign. Post-It and Distraction Free modes included.
 
-![dark-mode](https://github.com/nextpad-plus-plus/nextpad.org/blob/main/news/npp_linux_v1.1.0_release/dark-mode.png) 
+![dark-mode](https://raw.githubusercontent.com/nextpad-plus-plus/nextpad.org/main/news/npp_linux_v1.1.0_release/dark-mode.png) 
 
-![dark-mode-classic](https://github.com/nextpad-plus-plus/nextpad.org/blob/main/news/npp_linux_v1.1.0_release/dark-mode2.png) 
+![dark-mode-classic](https://raw.githubusercontent.com/nextpad-plus-plus/nextpad.org/main/news/npp_linux_v1.1.0_release/dark-mode2.png) 
 
-![dark-mode-classic](https://github.com/nextpad-plus-plus/nextpad.org/blob/main/news/npp_linux_v1.1.0_release/light-mode-classic.png) 
+![dark-mode-classic](https://raw.githubusercontent.com/nextpad-plus-plus/nextpad.org/main/news/npp_linux_v1.1.0_release/light-mode-classic.png) 
 
 
 ---
@@ -110,7 +110,7 @@ It runs happily on a Raspberry Pi. It runs even better on anything more.
 Grab the package for your distro and architecture from the [Linux Download page](https://nextpad.org/download/linux.html) — files are named like `Nextpad++v1.1.0_amd64.deb`, `Nextpad++v1.1.0_arm64.deb`, `Nextpad++v1.1.0_amd64.rpm`, `Nextpad++v1.1.0_arm64.rpm`.
 
 
-![app-center](https://github.com/nextpad-plus-plus/nextpad.org/blob/main/news/npp_linux_v1.1.0_release/distro.png)
+![app-center](https://raw.githubusercontent.com/nextpad-plus-plus/nextpad.org/main/news/npp_linux_v1.1.0_release/distro.png)
 
 
 ## Debian / Ubuntu / Mint (.deb — recommended)
@@ -144,7 +144,7 @@ sudo snap install nextpad
 
 The snap is strictly confined: it reaches your files through the standard snap `home` and `removable-media` permissions, so if a file outside your home folder won't open, grant the permission in App Center → Nextpad → Permissions. When you want the fastest startup and the smallest footprint, the .deb/.rpm is the recommended route; when you want zero-thought auto-updates, the snap is there.
 
-![app-center](https://github.com/nextpad-plus-plus/nextpad.org/blob/main/news/npp_linux_v1.1.0_release/app-center.png) 
+![app-center](https://raw.githubusercontent.com/nextpad-plus-plus/nextpad.org/main/news/npp_linux_v1.1.0_release/app-center.png) 
 
 ## Staying current
 
@@ -199,9 +199,9 @@ If you hit anything else, the issue tracker is open — see below.
 - Turn on **Settings on cloud** (*Preferences → Cloud & Link*) and point it at a synced folder to share one configuration between your Mac and your Linux box.
 - Keyboard defaults follow **Windows Notepad++**. The Shortcut Mapper (5 tabs, including Scintilla commands) is there when you disagree.
 
-![preferences](https://github.com/nextpad-plus-plus/nextpad.org/blob/main/news/npp_linux_v1.1.0_release/preferences.png) 
+![preferences](https://raw.githubusercontent.com/nextpad-plus-plus/nextpad.org/main/news/npp_linux_v1.1.0_release/preferences.png) 
 
-![preferences](https://github.com/nextpad-plus-plus/nextpad.org/blob/main/news/npp_linux_v1.1.0_release/home-folder.png) 
+![preferences](https://raw.githubusercontent.com/nextpad-plus-plus/nextpad.org/main/news/npp_linux_v1.1.0_release/home-folder.png) 
 
 ---
 
