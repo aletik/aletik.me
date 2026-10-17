@@ -1,7 +1,7 @@
 ---
 title: Tailrace.ai 
 date: 2026-10-10
-description: Agentic first AI first Data platform and plugin marketplace. 
+description: Agentic AI first Data platform and plugin marketplace. 
 tags: [Platform agnostic, open-source]
 ---
 
