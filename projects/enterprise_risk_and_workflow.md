@@ -19,7 +19,7 @@ Keyboards will be gone in 20 years. We are getting ready.
 
 Tiny is landing first followed by Onyx.
 
-![Tailrace.ai](https://raw.githubusercontent.com/nextpad-plus-plus/nextpad.org/main/news/npp_v1.1.0_updates/onyx-tiny03.png)
+![tiny and onyx](https://raw.githubusercontent.com/nextpad-plus-plus/nextpad.org/main/news/npp_v1.1.0_updates/onyx-tiny03.png)
 
 
 
