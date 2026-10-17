@@ -1,14 +1,21 @@
 ---
-title: Agentic, small footprint Enterprise Risk Management platform 
-date: 2026-04-09
-description: Upcoming agentic, open source small footprint Enterprise Risk Management platform. 
+title: Tailrace.ai 
+date: 2026-10-10
+description: Agentic first AI first Data platform and plugin marketplace. 
 tags: [Platform agnostic, open-source]
 ---
 
-![Notepad++ running on macOS](risk/risk_system.png)
+![Tailrace.ai](risk/risk_system.png)
 
 
-Work in progress. Will be somewhat extensive. Quite a few major modules and native agentic functionality. I'm building on my experience working on platforms at Moody's, Axiom, BNY. Each of these platforms had its own problems. It will be open-source. It will likely not be hosted but just install and run on-prem. Also each module a user will be able to install and use separately (mix and match).     
+Upcoming ecosystem of AI first enterprise-grade products for workflow, data, AI automation, data lineage and AI plugin marketplace. 
+These will compete with products like Alteryx, Pentaho, IBM Lineage and Atlan. 
+
+
+All single-binary servers. Install in seconds on any platform, build visually or tell AI to build, runs forever — on a laptop menu bar that no tech people can use or as a service in a clustered fleet. Deterministic, auditable workflows that can call AI and be fully managed and extended by AI. Keyboards will be gone in 25 years. We are getting ready.
+
+
+
 
 
 
